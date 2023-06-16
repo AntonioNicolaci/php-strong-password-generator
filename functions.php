@@ -4,6 +4,13 @@ $arrSign = [
     "sign" => "-_.:,;à°ò@+*]}[{^'?=)(/&%$!\|",
     "numb" => "1234567890",
 ];
+$calcBtn = false;
+$lPass = $_GET["lPass"] ?? '';
+echo $lPass;
+$repeat = $_GET["rep"] ?? 0;
+$opt = $_GET["opt"] ?? [];
+var_dump($opt);
+
 function passCreator($sign, $lPass, $repeat, $opt) {
     $signSplit= array();
     $newPass = '';
